@@ -1,0 +1,162 @@
+COMANDOS BÁSCICOS #1
+
+window.alert() --> Método utilizado para mostrar uma caixa de diálogo com um aviso e um botão "OK".
+
+window.confirm() --> Método utilizado para mostrar uma caixa com uma mensagem e dois botões, um "OK" e um "Cancelar".
+
+window.prompt() --> Método utilizado para mostrar uma caixa com uma mensagem solicitando que o usuário digite algum texto.
+
+document.write() --> Método que grava uma sequência de caracteres em um documento.
+
+document.writeln() --> Método que grava uma sequência de caracteres em uma nova linha do documento.
+
+===================================================================================================
+
+VARIÁVEIS E IDENTIFICADORES
+
+As "váriaveis" são espaços de armazenamento de dados. Para utilizar esses espaços, é utilizado a palavra "var" (também pode ser usado a palavra "let"), e para identificar cada variável, a mesma precisa de um "identificador".
+
+Para a nomeação de um identificador, deve-se levar em consideração algumas regras e dicas:
+    - Podem começar com letra, $ ou _;
+    - Não podem começar com números;
+    - É possível usar letras ou números;
+    - É possível usar acentos e símbolos;
+    - Não podem conter espaços;
+    - Não podem ser palavras reservadas, palavras essas que o JavaScript utiliza como comandos;
+    - Letras maiúsculas e minúsculas fazem diferença;
+    - É recomendável a escolha de nomes coerentes para as variáveis.
+
+Os "dados", que são armazenados nas variáveis, podem ser classificados em diversos tipos, podendo ser:
+    - string --> Sequência de caracteres usados para representar um texto.
+        Ex. 1: "JavaScript";
+        Ex. 2: 'Olá, Mundo!';
+        Ex. 3: `(21) 91034-5678`.
+
+    - number --> Valores numéricos, podendo ser inteiros, reais e negativos.
+        Ex. 1: 5;
+        Ex. 2: -12;
+        Ex. 3: 3.14.
+
+    - boolean --> Pode assumir dois valores, true ou false, ou seja, verdadeiro ou falso.
+
+===================================================================================================
+
+TRATAMENTO DE DADOS
+
+Conversão de String para Number
+    - Number.parseInt(n)
+        Conversão para um número inteiro.
+    
+    - Number.parseFloat(n)
+        Conversão para um número real
+
+    - Number(n)
+        O próprio JavaScript decide se o número convertido será inteiro ou real
+
+---------------------------------------------------------------------------------------------------
+
+Conversão de Number para String
+
+    - String(n)
+
+    - n.toString()
+
+---------------------------------------------------------------------------------------------------
+
+Formatando Strings
+    var s = 'JavaScript'
+    'Eu estou aprendendo s' --> não faz interpolação
+    'Eu estou aprendendo ' + s --> usa concatenação
+    `Eu estou aprendendo ${s}` --> usa template string
+
+    s.length --> quantos caracteres a string tem
+    s.toUpperCase() --> tudo para letras maiúsculas
+    s.toLowerCase() --> tudo para letras minúsculas
+
+---------------------------------------------------------------------------------------------------
+
+Formatando Numbers
+    var n1 = 1543.5
+    n1 --> 1543.5
+    n1.toFixed(2) --> 1543.50
+    n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) --> R$ 1.543,50
+
+===================================================================================================
+
+OPERADORES
+
+Os "Operadores" são símbolos que executam uma determinada manipulção matemática ou lógica específica. Esses operadores podem ser "aritméticos", "atribuição", "relacionais", "lógicos" e "ternários".
+
+---------------------------------------------------------------------------------------------------
+
+Operadores Aritméticos 
+
+    + --> Operador de soma.
+        Ex.: 5 + 2 = 7
+
+    - --> Operador de subtração.
+        Ex.: 5 - 2 = 3
+
+    * --> Operador de multiplicação.
+        Ex.: 5 * 2 = 10
+
+    / --> Operador de divisão.
+        Ex.: 5 / 2 = 2.5
+
+    % --> Operador restante (resto da divisão).
+        Ex.: 5 % 2 = 1
+
+    ** --> Operador de potência.
+        Ex.: 5 ** 2 = 25
+
+---------------------------------------------------------------------------------------------------
+
+Precedência dos Operadores 
+
+    | --> ()
+    | --> **
+    | --> * / %
+    | --> + -
+    V
+
+---------------------------------------------------------------------------------------------------
+
+Atribuição Simples
+
+    var a = 5 + 3
+        |--> Resultado deu 8
+
+    var b = a % 5
+        |--> Se a é igual a 8, então o resto da divisão com 5 é igual a 3
+
+    var c = 5 * b ** 2
+        |--> Segundo a ordem de precedência, primeiro é resolvida a potência, sendo b igual a 3, então o mesmo elevado a 2 é igual a 9. Com o resultado da potência sendo 9, então 5 multiplicado por 9 é igual a 45.
+
+    var d = 10 - a / 2
+        |--> Segundo a ordem de precedência, primeiro é resolvida a divisão, sendo a igual a 8, então 8 dividido por 2 é igual a 4. Com o resultado da divisão sendo 4, então 10 menos 4 é igual a 6.
+
+    var e = 6 * 2 / d
+        |--> Segundo a ordem de precedência, a multiplicação e a divisão se encontram juntas, portanto nesse caso, é resolvida primeira a operação que aparece primeiro. O resultado de 6 vezes 2 é igual a 12, e o mesmo dividido por d, que é igual a 6, o resultado da divisão é 2.
+
+    var f = b % e + 4 / e
+        |--> Segundo a ordem de precedência, primeiro se resolve o resto da divisão e a própria divisão, mas como o % aparece primeiro, esse será resolvido antes. O resto da divisão de b, que é igual a 3, com e, que é igual a 2, resulta em 1. O resultado da divisão de 4 com e, que é igual a 2, é 2. Então 1 mais 2 é igual a 3.
+
+---------------------------------------------------------------------------------------------------
+
+Auto-atribuição e Simplificação
+
+    var n = 3
+    n = n + 4  -->  n += 4
+    n = n - 5  -->  n -= 5
+    n = n * 4  -->  n *= 4
+    n = n / 2  -->  n /= 2
+    n = n ** 2 -->  n **= 2
+    n = n % 5  -->  n %= 5
+
+---------------------------------------------------------------------------------------------------
+
+Incremento
+
+    var x = 5
+    x = x + 1  -->  x++
+    x = x - 1  -->  x--
