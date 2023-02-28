@@ -121,7 +121,7 @@ Precedência dos Operadores
 
 ---------------------------------------------------------------------------------------------------
 
-Atribuição Simples
+Operadores de Atribuição Simples
 
     var a = 5 + 3
         |--> Resultado deu 8
@@ -160,3 +160,116 @@ Incremento
     var x = 5
     x = x + 1  -->  x++
     x = x - 1  -->  x--
+
+---------------------------------------------------------------------------------------------------
+
+Operadores Relacionais 
+
+    > --> Operador de maior.
+        Ex.: 5 > 2 --> true
+
+    < --> Operador de menor.
+        Ex.: 7 < 4 --> false
+
+    >= --> Operador de maior ou igual.
+        Ex.: 8 >= 8 --> true
+
+    <= --> Operador de menor ou igual.
+        Ex.: 9 <= 7 --> false
+
+    == --> Operador de igual.
+        Ex.: 5 == 5 --> true
+
+    != --> Operador de diferente.
+        Ex.: 4 != 4 --> false
+
+---------------------------------------------------------------------------------------------------
+
+Operadores Relacionais de Identidade
+
+    5 == 5 --> true 
+        |--> O número 5 é igual a 5.
+
+    5 == '5' --> true 
+        |--> O número 5 é igual a '5', porque o sinal de igualdade (==) não testa o tipo. Para o JavaScript, ambos possuem a mesma grandeza.
+
+    5 === '5' --> false 
+        |--> O "operador de igualdade restrita" (===), leva em consideração tanto o valor quanto o tipo. Nesse exemplo, ambos possuem o mesmo valor, mas não possuem o mesmo tipo. Ou seja, nesse caso, 5 e '5' não são idênticos.
+
+    5 === 5 --> true
+        |--> Ambos os valores possuem o mesmo valor e o mesmo tipo, ou seja, são idênticos.
+
+    5 !== '5' --> true
+        |--> O "operador de desigual restrito" (!==) leva em consideração tanto o valor quanto o tipo. Nesse exemplo, ambos possuem o mesmo valor, mas não possuem o mesmo tipo. Ou seja, nesse caso, 5 e '5' são diferentes.
+
+---------------------------------------------------------------------------------------------------
+
+Exemplos Reais de Operadores Relacionais 
+
+    - preço >= 200.50 --> O preço é maior ou igual a 200.50?
+
+    - idade < 18 --> A idade é menor do que 18?
+
+    - curso == 'JavaScript' --> O curso é JavaScript?
+
+    - n1 != n2 --> O primeiro número é diferente do segundo número?
+
+---------------------------------------------------------------------------------------------------
+
+Operadores Lógicos 
+
+    ! --> Operador de negação.
+        Ex.: Eu quero uma caneta de qualquer cor, menos (!) azul.
+
+        ! - true --> false
+            false --> true
+
+    && --> Operador de conjunção.
+        Ex.: Eu quero uma caneta azul e (&&) uma caneta vermelha.
+
+             true + true --> true
+        && - true + false --> false
+             false + true --> false 
+             false + false --> false
+
+    || --> Operador de disjunção.
+        Ex.: Eu quero uma caneta azul ou (||) uma caneta vermelha.
+
+             true + true --> true
+        || - true + false --> true
+             false + true --> true 
+             false + false --> false
+
+---------------------------------------------------------------------------------------------------
+
+Precedência dos Operadores 
+
+    | --> ()  **  /  ...
+    | --> >  <  >=  ...
+    | --> !
+    | --> &&
+    | --> ||
+    V
+
+---------------------------------------------------------------------------------------------------
+
+Exemplos Reais de Operadores Lógicos 
+
+    - idade >= 15 && idade <= 17 --> A idade está entre 15 e 17?
+
+    - estado == 'RJ' || estado == 'SP' --> O estado é RJ ou SP?
+
+    - salário > 1500 && sexo != 'M' --> O salário é acima de 1500 e não é homem?
+
+---------------------------------------------------------------------------------------------------
+
+Operadores Ternários 
+
+    Os "operadores ternários" são o ? e o : dentro de uma mesma expressão. Esse operador é chamado assim, porque ele possui três partes e é representado da seguinte maneira:
+
+    teste ? true : false
+
+    ou seja,
+
+    média >= 7.0?'Aprovado':'Reprovado'
+        |--> Se a média for igual ou maior que 7.0, então está 'Aprovado', se não for, então está 'Reprovado'.
