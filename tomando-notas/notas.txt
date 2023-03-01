@@ -273,3 +273,44 @@ Operadores Ternários
 
     média >= 7.0?'Aprovado':'Reprovado'
         |--> Se a média for igual ou maior que 7.0, então está 'Aprovado', se não for, então está 'Reprovado'.
+
+===================================================================================================
+
+DOM 
+
+O DOM (Document Object Model) é um modelo de objetos para documentos. Ou seja, é um conjunto de objetos dentro do navegador que dará acesso aos componentes internos do website.
+
+---------------------------------------------------------------------------------------------------
+
+Árvore DOM de exemplo 
+
+           [window]
+         /    |     \
+[location][document][history]
+              |
+            [html]
+           /      \
+       [head]     [body]
+      /   |      / |  | \
+ [meta][title][h1][p][p][div]
+                      |
+                  [strong]
+
+Quem está acima na árvore hierarquica é chamado de "parent" (pai), e que está abaixo na árvore hierarquica é chamado de "child" (filho).
+
+---------------------------------------------------------------------------------------------------
+
+Selecionando o DOM
+
+Há 5 métodos de acesso ao DOM, podendo ser por Marca, por ID, por Nome, por Classe ou por Seletor.
+
+    - Por Marca --> getElementsByTagName()
+
+    - Por ID --> getElementById()
+
+    - Por Nome --> get ElementByName()
+
+    - Por Classe --> getElementsByClassName()
+
+    - Por Seletor --> querySelector()
+                 |--> querySelectorAll()
