@@ -280,9 +280,7 @@ DOM
 
 O DOM (Document Object Model) é um modelo de objetos para documentos. Ou seja, é um conjunto de objetos dentro do navegador que dará acesso aos componentes internos do website.
 
----------------------------------------------------------------------------------------------------
-
-Árvore DOM de exemplo 
+Exemplo de árvore DOM de exemplo:
 
            [window]
          /    |     \
@@ -314,3 +312,69 @@ Há 5 métodos de acesso ao DOM, podendo ser por Marca, por ID, por Nome, por Cl
 
     - Por Seletor --> querySelector()
                  |--> querySelectorAll()
+
+---------------------------------------------------------------------------------------------------
+
+Eventos e Funções
+
+Os "eventos" são condições que, quando verdadeiras, farão a chamada de uma "função". Temos como exemplos de eventos:
+
+    - onmouseenter --> Evento que ocorre quando o ponteiro do mouse entra em um elemento.
+
+    - onmousemove --> Evento que ocorre quando o ponteiro do mouse se move sobre um elemento.
+
+    - onmousedown --> Evento que ocorre quando o botão do mouse é pressionado e segurado sobre um elemento.
+
+    - onmouseup --> Evento que ocorre quando o botão do mouse, que estava pressionado, é liberado em um elemento.
+
+    - onclick --> Evento que ocorre quando o usuário clica em um elemento.
+
+    - onmouseout --> Evento que ocorre quando o ponteiro de mouse sai de um elemento.
+
+As "funções" são um bloco de código projetado para executar, assim que são chamadas, uma tarefa específica. Há duas maneiras de disparar uma função, dentro do HTML ou dentro do JavaScript.
+
+Dentro do HTML:
+
+    <html>
+    <body>
+        <div id="area" onmouseenter="entrar()" onclick="clicar()">
+            Botão
+        </div>
+
+        <script>
+            var a = window.document.getElementById('area')
+
+            function entrar() {
+                a.style.background = 'darkgreen'
+            }
+
+            function clicar() {
+                a.style.background = 'lightgreen'
+            }
+        </script>
+    </body>
+    </html>
+
+Dentro do JavaScript:
+
+    <html>
+    <body>
+        <div id="area">
+            Botão
+        </div>
+
+        <script>
+            var a = window.document.getElementById('area')
+            a.addEventListener('mouseenter', entrar)
+            a.addEventListener('click', clicar)
+
+            function entrar() {
+                a.style.background = 'darkgreen'
+            }
+
+            function clicar() {
+                a.style.background = 'lightgreen'
+            }
+        </script>
+    </body>
+    </html>
