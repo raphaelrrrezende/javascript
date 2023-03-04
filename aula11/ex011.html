@@ -15,7 +15,7 @@
 <body>
     <h1>Você é Brasileiro?</h1>
 
-    <label for="txtpais">Qual o seu país de origem? </label>
+    <label for="txtpais">De qual país você é? </label>
     <input type="text" name="txtpais" id="txtpais">
     <input type="button" value="Verificar" onclick="verificar()">
 
@@ -25,17 +25,17 @@
 
     <script>
         function verificar() {
-            var país = document.getElementById('txtpais')
-            var nac = país.value
+            var txtpaís = document.getElementById('txtpais')
+            var nac = txtpaís.value
             var res = document.getElementById('res')
-            res.innerHTML = `<p>Seu país de origem é <strong>${nac}</strong>.</p>`
+            res.innerHTML = `<p>O seu país de origem é <em>${nac}</em></p>`
 
             if (nac == 'Brasil' || nac == 'brasil') {
-                res.innerHTML += '<p>Você é <strong>brasileiro</strong>!</p>'
+                res.innerHTML += '<p>logo você é <em>brasileiro</em>!</p>'
             } else {
-                res.innerHTML += '<p>Você é <strong>estrangeiro</strong>.</p>'
+                res.innerHTML += '<p>logo você é <em>estrangeiro</em>!</p>'
             }
         }
     </script>
 </body>
-</html>
+</html>    
