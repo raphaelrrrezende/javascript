@@ -378,3 +378,34 @@ Dentro do JavaScript:
         </script>
     </body>
     </html>
+
+===================================================================================================
+
+CONDIÇÕES
+
+As "Condições", como o próprio nome sugere, é uma estrutura condicional que permite que um programa execute diferentes comandos, dependendo do valor que a mesma receberá, verdadeiro ou falso. Abaixo uma ilustração de uma condição: 
+
+       |
+  --- < > ---
+  |         |
+true      false 
+  |---( )---|
+       |
+
+---------------------------------------------------------------------------------------------------
+
+TIPOS DE CONDIÇÕES 
+
+- Condição Simples: 
+
+    if (condição) {
+        true
+    }
+
+- Condição Composta:
+
+    if (condição) {
+        true
+    } else {
+        false
+    }
