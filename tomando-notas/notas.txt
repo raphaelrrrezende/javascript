@@ -10,6 +10,8 @@ document.write() --> Método que grava uma sequência de caracteres em um docume
 
 document.writeln() --> Método que grava uma sequência de caracteres em uma nova linha do documento.
 
+console.log() --> Método que registra uma mensagem no console. Muito útil para realizar testes.
+
 ===================================================================================================
 
 VARIÁVEIS E IDENTIFICADORES
@@ -408,4 +410,43 @@ TIPOS DE CONDIÇÕES
         true
     } else {
         false
+    }
+
+- Condição Aninhada:
+
+    if (cond1) {
+        bloco1
+    } else {
+        if (cond2) {
+            bloco2
+        } else {
+            bloco3
+        }
+    }
+
+ou 
+
+    if (cond1) {
+        bloco1
+    } else if (cond2) {
+        bloco2
+    } else {
+        bloco3
+    }
+
+- Condição Múltipla:
+
+    switch (expressão) {
+        case valor 1:
+            bloco1
+            break
+        case valor 2:
+            bloco2
+            break
+        case valor 3:
+            bloco3
+            break
+        default:
+            bloco4
+            break
     }
