@@ -465,8 +465,36 @@ Também é possível fazer a estrutura de repetição após o teste lógico. Ou 
             blocoA
         }
 
+        ou seja
+
+        var = p
+        while (p <= 10) {
+            console.log(`Passo &{p}`)
+            c++
+        }
+
     - Estrutura de repetição com teste lógico no final:
 
         do {
             blocoA
         } while (condição)
+
+        ou seja
+
+        var = p
+        do {
+            console.log(`Passo ${p}`)
+            c++
+        } while (p <= 10)
+
+    - Estrutura de repetição com variável de controle:
+
+        for (inicio;teste;incr) {
+            blocoA
+        }
+
+        ou seja
+
+        for (var p = 1; p <= 10; c++) {
+            console.log(`Passo ${p}`)
+        }
