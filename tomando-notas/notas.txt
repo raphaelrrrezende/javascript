@@ -450,3 +450,23 @@ ou
             bloco4
             break
     }
+
+===================================================================================================
+
+REPETIÇÕES
+
+As "repetições", também chamadas de "laços", "iterações" ou 'loopings", começam exatamente como uma condição, porém, enquanto o teste lógico for verdadeiro, um bloco é executado e o mesmo retorna para a condição, e o mesmo ciclo se repete enquanto a condição for verdadeira. Quando a condição for falsa, o ciclo se quebra.
+
+Também é possível fazer a estrutura de repetição após o teste lógico. Ou seja, o bloco é executado primeiro e depois é feito o teste, e se o teste for verdadeiro o bloco será executado novamente e o fluxo apenas sai da estrutura de repetição quando o teste lógico passa a ser falso.
+
+    - Estrutura de repetição com teste lógico no início:
+
+        while (condição) {
+            blocoA
+        }
+
+    - Estrutura de repetição com teste lógico no final:
+
+        do {
+            blocoA
+        } while (condição)
