@@ -498,3 +498,29 @@ Também é possível fazer a estrutura de repetição após o teste lógico. Ou 
         for (var p = 1; p <= 10; c++) {
             console.log(`Passo ${p}`)
         }
+
+===================================================================================================
+
+VARIÁVEIS COMPOSTAS
+
+Enquanto uma Variável Simples só consegue armazenar "um valor" por vez, uma "Variável Composta", também chamada de "Array" ou de "Vetor", é capaz de armazenar "vários valores" em uma mesma estrutura.
+
+Um Vetor é composto de "Elementos", e um elemento de um vetor agrupa o espaço da memória, o valor colocado dentro dele, que é seu conteúdo, e um "índice". Um "índice", também podendo ser chamado de "chave", ou em inglês, "key", é um número que cada elemento recebe. 
+
+Exemplo: 
+
+    let num = [5, 8, 4]
+    num[3] = 6
+    num.push(7)
+
+                num
+                -------------------------------
+                |  5  |  8  |  4  |  6  |  7  |
+                -------------------------------
+                   0     1     2     3     4
+    
+    Atributos que podem ser usados: 
+        
+        num.length --> 5 elementos.
+
+        num.sort() --> Esse atributo irá ordenar os elementos.
