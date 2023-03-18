@@ -540,3 +540,28 @@ Exemplo de simplificação de código do percurso em vetores:
         for(let pos in num) {
             console.log(num[pos])
         }
+
+===================================================================================================
+
+FUNÇÕES 
+
+As "Funções" são "ações" executadas assim que são "chamadas" ou em decorrência de algum "evento". Um "Função" pode receber "parâmetros" e retornar um "resultado".
+
+    function ação(param) {
+
+        return res
+    }
+
+    ação(5)
+
+Exemplo: 
+
+    funtion parimp(n) {
+        if (n % 2 == 0) {
+            return 'par'
+        } else {
+            return 'ímpar'
+        }
+    }
+
+    let res = parimp(11)
