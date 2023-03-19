@@ -565,3 +565,41 @@ Exemplo:
     }
 
     let res = parimp(11)
+
+===================================================================================================
+
+OBJETOS 
+
+Os "Objetos" são uma coleção de dados e/ou funcionalidades relacionadas, que geralmente consistem em diversas variáveis e funções, que são chamadas de propriedades e métodos quando estão dentro de objetos. Abaixo está a diferença entre um Array e um Object:
+
+    - Array
+
+        let num = [5, 8, 4]
+
+        num 
+        -------------
+        | 5 | 8 | 4 |
+        -------------
+          0   1   2
+
+    - Object 
+
+        let amigo = {nome: 'José', sexo: 'M', peso: 85.4, engordar(p){}}
+
+        amigo 
+        --------------------------------
+        | José | M | 85.4 | [function] |
+        --------------------------------
+          nome  sexo  peso   engordar()
+
+===================================================================================================
+
+PRÓXIMOS PASSOS
+
+    - functions
+    - objetos
+    - modularização
+    - RegEx
+    - JSON
+    - AJAX
+    - NodeJS
